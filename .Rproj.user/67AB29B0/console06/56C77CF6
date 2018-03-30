@@ -32,3 +32,48 @@ Untracked files:
 
 nothing added to commit but untracked files present (use "git add" to track)
 ]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git add -A
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git commit -m "second  commit"
+[master e19234f] second commit
+ 22 files changed, 244 insertions(+)
+ create mode 100644 .Rbuildignore
+ create mode 100644 .Rhistory
+ create mode 100644 .Rproj.user/67AB29B0/console06/56C77CF6
+ create mode 100644 .Rproj.user/67AB29B0/console06/56C77CF6.env
+ create mode 100644 .Rproj.user/67AB29B0/console06/INDEX001
+ create mode 100644 .Rproj.user/67AB29B0/pcs/files-pane.pper
+ create mode 100644 .Rproj.user/67AB29B0/pcs/source-pane.pper
+ create mode 100644 .Rproj.user/67AB29B0/pcs/windowlayoutstate.pper
+ create mode 100644 .Rproj.user/67AB29B0/pcs/workbench-pane.pper
+ create mode 100644 .Rproj.user/67AB29B0/rmd-outputs
+ create mode 100644 .Rproj.user/67AB29B0/saved_source_markers
+ create mode 100644 .Rproj.user/67AB29B0/sources/prop/8A55D3BD
+ create mode 100644 .Rproj.user/67AB29B0/sources/prop/INDEX
+ create mode 100644 .Rproj.user/67AB29B0/sources/s-3A9C188E/F066F975
+ create mode 100644 .Rproj.user/67AB29B0/sources/s-3A9C188E/F066F975-contents
+ create mode 100644 .Rproj.user/67AB29B0/sources/s-3A9C188E/lock_file
+ create mode 100644 .Rproj.user/shared/notebooks/patch-chunk-names
+ create mode 100644 DESCRIPTION
+ create mode 100644 NAMESPACE
+ create mode 100644 R/hello.R
+ create mode 100644 man/hello.Rd
+ create mode 100644 tidyQ.Rproj
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git push
+Counting objects: 32, done.
+Delta compression using up to 4 threads.
+Compressing objects:   4% (1/21)   Compressing objects:   9% (2/21)   Compressing objects:  14% (3/21)   Compressing objects:  19% (4/21)   Compressing objects:  23% (5/21)   Compressing objects:  28% (6/21)   Compressing objects:  33% (7/21)   Compressing objects:  38% (8/21)   Compressing objects:  42% (9/21)   Compressing objects:  47% (10/21)   Compressing objects:  52% (11/21)   Compressing objects:  57% (12/21)   Compressing objects:  61% (13/21)   Compressing objects:  66% (14/21)   Compressing objects:  71% (15/21)   Compressing objects:  76% (16/21)   Compressing objects:  80% (17/21)   Compressing objects:  85% (18/21)   Compressing objects:  90% (19/21)   Compressing objects:  95% (20/21)   Compressing objects: 100% (21/21)   Compressing objects: 100% (21/21), done.
+Writing objects:   3% (1/32)   Writing objects:   6% (2/32)   Writing objects:   9% (3/32)   Writing objects:  12% (4/32)   Writing objects:  15% (5/32)   Writing objects:  18% (6/32)   Writing objects:  21% (7/32)   Writing objects:  25% (8/32)   Writing objects:  28% (9/32)   Writing objects:  31% (10/32)   Writing objects:  34% (11/32)   Writing objects:  37% (12/32)   Writing objects:  40% (13/32)   Writing objects:  43% (14/32)   Writing objects:  46% (15/32)   Writing objects:  50% (16/32)   Writing objects:  53% (17/32)   Writing objects:  56% (18/32)   Writing objects:  59% (19/32)   Writing objects:  62% (20/32)   Writing objects:  65% (21/32)   Writing objects:  68% (22/32)   Writing objects:  71% (23/32)   Writing objects:  75% (24/32)   Writing objects:  78% (25/32)   Writing objects:  81% (26/32)   Writing objects:  84% (27/32)   Writing objects:  87% (28/32)   Writing objects:  90% (29/32)   Writing objects:  93% (30/32)   Writing objects:  96% (31/32)   Writing objects: 100% (32/32)   Writing objects: 100% (32/32), 5.15 KiB | 292.00 KiB/s, done.
+Total 32 (delta 0), reused 0 (delta 0)
+To https://github.com/soohyuna/tidyQ.git
+   3e238d5..e19234f  master -> master
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ 
