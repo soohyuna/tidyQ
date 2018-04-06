@@ -76,4 +76,150 @@ Changes not staged for commit:
 	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
 
 no changes added to commit (use "git add" and/or "git commit -a")
-]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ 
+[K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ ls
+DESCRIPTION  NAMESPACE    [1m[34mR[39;49m[0m/           README.md    [1m[34mman[39;49m[0m/         tidyQ.Rproj
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ cd
+]0;~[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mdeleted:    README.md[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.CFUserTextEncoding[m
+	[31m.DS_Store[m
+	[31m.Rapp.history[m
+	[31m.Trash/[m
+	[31m.bash_history[m
+	[31m.bash_profile[m
+	[31m.bash_sessions/[m
+	[31m.cups/[m
+	[31m.dropbox/[m
+	[31m.emacs.d/[m
+	[31m.gitconfig[m
+	[31m.gitignore[m
+	[31m.oracle_jre_usage/[m
+	[31m.rstudio-desktop/[m
+	[31m.subversion/[m
+	[31m.swt/[m
+	[31mApplications/[m
+	[31mCreative Cloud Files/[m
+	[31mDesktop/[m
+	[31mDocuments/[m
+	[31mDownloads/[m
+	[31mDropbox/[m
+	[31mLibrary/[m
+	[31mMcCormack plasma E&P in mice throughout pregnancy.png[m
+	[31mMovies/[m
+	[31mMusic/[m
+	[31mNormalized.txt[m
+	[31mPictures/[m
+	[31mPublic/[m
+	[31mSoovolcanoplot.tiff[m
+	[31mggplot2-book/[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~[m$ git ad[K[K[K[K[K[Kls
+[1m[34mApplications[39;49m[0m/
+[1m[34mCreative Cloud Files[39;49m[0m/
+[1m[34mDesktop[39;49m[0m/
+[1m[34mDocuments[39;49m[0m/
+[1m[34mDownloads[39;49m[0m/
+[1m[34mDropbox[39;49m[0m/
+[1m[34mLibrary[39;49m[0m/
+McCormack plasma E&P in mice throughout pregnancy.png
+[1m[34mMovies[39;49m[0m/
+[1m[34mMusic[39;49m[0m/
+Normalized.txt
+[1m[34mPictures[39;49m[0m/
+[1m[34mPublic[39;49m[0m/
+Soovolcanoplot.tiff
+[1m[34mggplot2-book[39;49m[0m/
+]0;~[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~[m$ cd / [K[KDesktop
+]0;~/Desktop[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop[m$ ls
+01-25-18_qPCR_C57thymus.xlsx
+2018-02-27_PR_WB_thymus-uterus KO and het samples.jpg
+2018-03-11_AHN_CV.docx
+2018-03-13_Lay abstract.docx
+2018-03-17 Lab meeting.pptx
+[1m[34m2018_Exp[39;49m[0m/
+[1m[34m2018_cytology[39;49m[0m/
+[1m[34m2018_sides[39;49m[0m/
+2R Ki67 2.5x.png
+AIRE Thymus Taqman P6 041316_data.xls
+ALL IL17 ms exp cytokine results for manuscript.pptx
+[1m[34mAnatomy Textbook[39;49m[0m/
+CT_IL17 and macrophage story_2017_Ahn.docx
+Clarke and Kendall thymus in pregnancy.pdf
+Dec-14-2017-Human-Cytokine-42-Plex-Tayade-Cell-Culture.xlsx
+FTOC RNA calculation.xlsx
+HE protocol with Mayer Heme.docx
+IL17 and macrophage story_2017_Ahn.docx
+MSU log Feb.docx
+[1m[34mPDF[39;49m[0m/
+[1m[34mPR cre mTmG_GR_Jeong[39;49m[0m/
+PRG gene.jpeg
+[1m[34mPaystub 2018[39;49m[0m/
+[1m[34mPictures[39;49m[0m/
+Projects for Soo.docx
+Sansom_Supplemental_Table2.xlsx
+Screen Shot 2017-08-25 at 7.04.05 PM.png
+Screen Shot 2017-12-11 at 9.03.31 PM.png
+Screen Shot 2018-01-06 at 12.35.28 PM.png
+Screen Shot 2018-01-06 at 3.56.37 PM.png
+Screen Shot 2018-01-06 at 4.26.22 PM.png
+Screen Shot 2018-01-15 at 11.55.42 AM.png
+Screen Shot 2018-01-15 at 11.56.07 AM.png
+Screen Shot 2018-02-01 at 11.18.47 AM.png
+Screen Shot 2018-02-01 at 4.30.35 PM.png
+Screen Shot 2018-02-01 at 6.42.02 PM.png
+Screen Shot 2018-02-19 at 7.00.56 PM.png
+Screen Shot 2018-03-16 at 1.16.34 PM.png
+Screen Shot 2018-04-03 at 3.54.07 PM.png
+Screen Shot 2018-04-03 at 3.54.38 PM.png
+[1m[34mWebsite[39;49m[0m/
+[1m[34mkallisto[39;49m[0m/
+lSgWomh.jpg
+[1m[32mmanuscript Figures.pptx[39;49m[0m*
+previous_grad_form.pdf
+qPCR_N_NP_Master.xlsx
+~$Eve Tech shipment_Combined samples.xlsx
+~$Feb 17, 2017, Mouse Cytokine 31-Plex, Ahn, Plasma (EDTA).xlsx
+~$Mar 30, 2017, Mouse Cytokine 31-Plex, Perez (Soo), Serum & Peritoneal Fluid.xlsx
+~$U log January.docx
+~$search Proposal.docx
+~$search Proposal_updated.docx
+]0;~/Desktop[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop[m$ 2018_sides/[K[K[K[K[K[K[K[K[K[K[Kcd 2018/[K_sides/tidyQ
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/67AB29B0/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/67AB29B0/sources/prop/8A55D3BD[m
+	[31mmodified:   .Rproj.user/67AB29B0/sources/prop/INDEX[m
+	[31mdeleted:    .Rproj.user/67AB29B0/sources/s-3A9C188E/F066F975[m
+	[31mdeleted:    .Rproj.user/67AB29B0/sources/s-3A9C188E/F066F975-contents[m
+	[31mdeleted:    .Rproj.user/67AB29B0/sources/s-3A9C188E/lock_file[m
+	[31mdeleted:    R/hello.R[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31m.gitignore[m
+	[31mR/file.R[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git add -A
