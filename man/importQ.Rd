@@ -4,7 +4,7 @@
 \alias{importQ}
 \title{A package to analyze qPCR data from CT values}
 \usage{
-importQ(file, cells)
+importQ(file, ranges)
 }
 \arguments{
 \item{file}{The `.xls` sheet that you want to import (it should be in your working directory).}

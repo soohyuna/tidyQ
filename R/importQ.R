@@ -36,19 +36,19 @@ importQ <- function(file, ranges) {
 
 # Old  --------------------------------
 
-importQ <- function(file, cells) {
-
-  file <- "qPCR_N_NP_Master.xls"
-
-  raw <- here(file)
-
-  sheets <- raw %>% excel_sheets() #locate the sheets on xls file
-
-  ranges <- list(cells)
-
-  rawdata <- map2_df(sheets, ranges,
-                    ~read_excel(file, sheet = .x, range = .y),
-                    .id = "sheet")
-  rawdata
-
-}
+# importQ <- function(file, cells) {
+#
+#   file <- "qPCR_N_NP_Master.xls"
+#
+#   raw <- here(file)
+#
+#   sheets <- raw %>% excel_sheets() #locate the sheets on xls file
+#
+#   ranges <- list(cells)
+#
+#   rawdata <- map2_df(sheets, ranges,
+#                     ~read_excel(file, sheet = .x, range = .y),
+#                     .id = "sheet")
+#   rawdata
+#
+# }
