@@ -300,3 +300,131 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git add -A
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git commit -m"made som [A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K
+[K[A[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[C[K[K[K[K[K[K[K[K "made so me changes"
+[master 9703f30] made some changes
+ 6 files changed, 96 insertions(+), 7 deletions(-)
+ rewrite .Rproj.user/67AB29B0/console06/INDEX001 (85%)
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git push
+Counting objects: 13, done.
+Delta compression using up to 4 threads.
+Compressing objects:   8% (1/12)   Compressing objects:  16% (2/12)   Compressing objects:  25% (3/12)   Compressing objects:  33% (4/12)   Compressing objects:  41% (5/12)   Compressing objects:  50% (6/12)   Compressing objects:  58% (7/12)   Compressing objects:  66% (8/12)   Compressing objects:  75% (9/12)   Compressing objects:  83% (10/12)   Compressing objects:  91% (11/12)   Compressing objects: 100% (12/12)   Compressing objects: 100% (12/12), done.
+Writing objects:   7% (1/13)   Writing objects:  15% (2/13)   Writing objects:  23% (3/13)   Writing objects:  30% (4/13)   Writing objects:  38% (5/13)   Writing objects:  46% (6/13)   Writing objects:  53% (7/13)   Writing objects:  61% (8/13)   Writing objects:  69% (9/13)   Writing objects:  76% (10/13)   Writing objects:  84% (11/13)   Writing objects:  92% (12/13)   Writing objects: 100% (13/13)   Writing objects: 100% (13/13), 2.12 KiB | 2.12 MiB/s, done.
+Total 13 (delta 6), reused 0 (delta 0)
+remote: Resolving deltas:   0% (0/6)   [Kremote: Resolving deltas:  16% (1/6)   [Kremote: Resolving deltas:  33% (2/6)   [Kremote: Resolving deltas:  50% (3/6)   [Kremote: Resolving deltas:  66% (4/6)   [Kremote: Resolving deltas:  83% (5/6)   [Kremote: Resolving deltas: 100% (6/6)   [Kremote: Resolving deltas: 100% (6/6), completed with 6 local objects.[K
+To https://github.com/soohyuna/tidyQ.git
+   9ea763b..9703f30  master -> master
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+[K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ cd
+]0;~[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~[m$ ls
+[1m[34mApplications[39;49m[0m/                                          [1m[34mMovies[39;49m[0m/
+[1m[34mCreative Cloud Files[39;49m[0m/                                  [1m[34mMusic[39;49m[0m/
+[1m[34mDesktop[39;49m[0m/                                               Normalized.txt
+[1m[34mDocuments[39;49m[0m/                                             [1m[34mPictures[39;49m[0m/
+[1m[34mDownloads[39;49m[0m/                                             [1m[34mPublic[39;49m[0m/
+[1m[34mDropbox[39;49m[0m/                                               Soovolcanoplot.tiff
+[1m[34mLibrary[39;49m[0m/                                               [1m[34mggplot2-book[39;49m[0m/
+McCormack plasma E&P in mice throughout pregnancy.png
+]0;~[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~[m$ cd Desktop/
+]0;~/Desktop[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop[m$ ls
+01-25-18_qPCR_C57thymus.xlsx
+100_pembrokeahn_sublet.pdf
+2018-02-27_PR_WB_thymus-uterus KO and het samples.jpg
+2018-03-11_AHN_CV.docx
+2018-03-13_Lay abstract.docx
+2018-03-17 Lab meeting.pptx
+[1m[34m2018_Exp[39;49m[0m/
+[1m[34m2018_cytology[39;49m[0m/
+[1m[34m2018_sides[39;49m[0m/
+2R Ki67 2.5x.png
+AIRE Thymus Taqman P6 041316_data.xls
+ALL IL17 ms exp cytokine results for manuscript.pptx
+[1m[34mAnatomy Textbook[39;49m[0m/
+CT_IL17 and macrophage story_2017_Ahn.docx
+Clarke and Kendall thymus in pregnancy.pdf
+DNA isolation from human PBMCs.docx
+Dec-14-2017-Human-Cytokine-42-Plex-Tayade-Cell-Culture.xlsx
+FTOC RNA calculation.xlsx
+HE protocol with Mayer Heme.docx
+IL17 and macrophage story_2017_Ahn.docx
+MSU log Feb.docx
+[1m[34mPDF[39;49m[0m/
+[1m[34mPR cre mTmG_GR_Jeong[39;49m[0m/
+PRG gene.jpeg
+[1m[34mPaystub 2018[39;49m[0m/
+[1m[34mPictures[39;49m[0m/
+Projects for Soo.docx
+RDSP.pptx
+Sansom_Supplemental_Table2.xlsx
+Screen Shot 2017-08-25 at 7.04.05 PM.png
+Screen Shot 2017-12-11 at 9.03.31 PM.png
+Screen Shot 2018-01-06 at 12.35.28 PM.png
+Screen Shot 2018-01-06 at 3.56.37 PM.png
+Screen Shot 2018-01-06 at 4.26.22 PM.png
+Screen Shot 2018-01-15 at 11.55.42 AM.png
+Screen Shot 2018-01-15 at 11.56.07 AM.png
+Screen Shot 2018-02-01 at 11.18.47 AM.png
+Screen Shot 2018-02-01 at 4.30.35 PM.png
+Screen Shot 2018-02-01 at 6.42.02 PM.png
+Screen Shot 2018-02-19 at 7.00.56 PM.png
+Screen Shot 2018-03-16 at 1.16.34 PM.png
+Screen Shot 2018-04-03 at 3.54.07 PM.png
+Screen Shot 2018-04-03 at 3.54.38 PM.png
+Screen Shot 2018-04-10 at 6.39.39 PM.png
+Screen Shot 2018-04-10 at 8.24.29 PM.png
+Screen Shot 2018-04-10 at 8.25.16 PM.png
+Screen Shot 2018-04-12 at 12.58.14 PM.png
+Skyline_Sublet contract001.pdf
+Twenty years of AIRE 2018.pdf
+[1m[34mWebsite[39;49m[0m/
+[1m[34mkallisto[39;49m[0m/
+lSgWomh.jpg
+[1m[32mmanuscript Figures.pptx[39;49m[0m*
+previous_grad_form.pdf
+qPCR_N_NP_Master.xlsx
+~$Eve Tech shipment_Combined samples.xlsx
+~$Feb 17, 2017, Mouse Cytokine 31-Plex, Ahn, Plasma (EDTA).xlsx
+~$Mar 30, 2017, Mouse Cytokine 31-Plex, Perez (Soo), Serum & Peritoneal Fluid.xlsx
+~$RDSP.pptx
+~$U log January.docx
+~$search Proposal.docx
+~$search Proposal_updated.docx
+]0;~/Desktop[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop[m$ cd 2018_sides/tidyQ/
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/67AB29B0/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/67AB29B0/sources/prop/INDEX[m
+	[31mmodified:   DESCRIPTION[m
+	[31mdeleted:    R/file.R[m
+	[31mdeleted:    man/hello.Rd[m
+	[31mmodified:   tidyQ.Rproj[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+
+	[31mR/importQ.R[m
+	[31mman/importQ.Rd[m
+	[31mqPCR_N_NP_Master.xls[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git add -A
