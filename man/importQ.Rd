@@ -9,7 +9,7 @@ importQ(file, cells)
 \arguments{
 \item{file}{The `.xls` sheet that you want to import (it should be in your working directory).}
 
-\item{range}{The specific range of cells within each sheet in your `.xls` file.}
+\item{ranges}{The specific range of cells within each sheet in your `.xls` file.}
 }
 \value{
 Combined dataframe containing data from all of the ranges from sheets.
@@ -20,3 +20,4 @@ A package to analyze qPCR data from CT values
 \keyword{file,}
 \keyword{import}
 \keyword{qPCR}
+\keyword{raw}
