@@ -2,7 +2,7 @@
 % Please edit documentation in R/importQ.R
 \name{importQ}
 \alias{importQ}
-\title{A package to analyze qPCR data from CT values}
+\title{A function to import .xls files into R}
 \usage{
 importQ(file, ranges)
 }
@@ -15,7 +15,7 @@ importQ(file, ranges)
 Combined dataframe containing data from all of the ranges from sheets.
 }
 \description{
-A package to analyze qPCR data from CT values
+A function to import .xls files into R
 }
 \keyword{file,}
 \keyword{import}

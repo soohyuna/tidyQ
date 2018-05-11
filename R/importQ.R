@@ -1,4 +1,4 @@
-#' A package to analyze qPCR data from CT values
+#' A function to import .xls files into R
 #'
 #' @param file The `.xls` sheet that you want to import (it should be in your working directory).
 #' @param  ranges The specific range of cells within each sheet in your `.xls` file.
