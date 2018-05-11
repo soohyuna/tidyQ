@@ -30,6 +30,8 @@ deltaQ <- function(df, ..., ref_gene) {
   df %>%
     filter(!Gene == "GAPDH")  %>%
     inner_join(ref_gene_df) %>%
+    select(-starts_with("sd"), -starts_with("se")) %>%
     mutate(deltaCT = meanCT - UQ(ref_gene2))
 
 }
+

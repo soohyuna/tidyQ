@@ -14,17 +14,24 @@
 #'
 #' @export
 
-avgQ <- function(df, ..., name = "Param", param_var, na.rm = TRUE) {
+avgQ <- function(df, ..., name = "CT", param_var, na.rm = TRUE) {
 
   group_var <- quos(...)
   param_var <- enquo(param_var)
-  N <- paste(name, "N" , sep = "_")
-  mean <- paste(name, "mean" , sep = "_")
+  N <- paste("N", name, sep = "_")
+  mean <- paste0("mean",name)
+  sd <- paste0("sd", name)
+  se <- paste0("se", name)
+
 
   df %>%
     group_by(!!! group_var) %>%
     summarise(   !! N := length(CT),
-                 !! mean := mean(!! param_var, na.rm = na.rm)
+                 !! mean := mean(!! param_var, na.rm = na.rm),
+                 !! sd := sd(!! param_var, na.rm = na.rm),
+                 !! se := sd(!! param_var, na.rm = na.rm) /
+                   sqrt(length(na.omit(!!param_var)))
+
     )
 
 }
