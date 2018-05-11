@@ -4,7 +4,7 @@
 \alias{avgQ}
 \title{A function to average CT values by groups}
 \usage{
-avgQ(df, ..., name = "Param", param_var, na.rm = TRUE)
+avgQ(df, ..., name = "CT", param_var, na.rm = TRUE)
 }
 \arguments{
 \item{df}{A data frame.}
