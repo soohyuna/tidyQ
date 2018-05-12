@@ -6,8 +6,7 @@
 #' @param y Variable for y-axis of the graph
 #' @param facets Include variables for facetwrap; tie two variables with ~
 #' @return ggplot of Amplification plot
-#' @example
-#'   df %>% ampliQ(df,x = CT, y = deltaRN, color = State)
+#' @example df %>% ampliQ(df,x = "CT", y = "deltaRN", color = "State", facets = "Mouse~State")
 #'
 #' @keywords amplification, RN, deltaRN
 #' @import tidyverse, themesoo
