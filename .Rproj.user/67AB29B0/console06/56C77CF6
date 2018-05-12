@@ -629,3 +629,29 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/2018_sides/tidyQ[m$ git add -A
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/2018_sides/tidyQ[m$ git omm[K[K[Kcommit -m "ampliQ
+> 
+> `[K
+.Rbuildignore         .Rproj.user/          .gitignore            NAMESPACE             README.md             qPCR_N_NP_Master.xls
+.Rhistory             .git/                 DESCRIPTION           R/                    man/                  tidyQ.Rproj
+> 
+.Rbuildignore         .Rproj.user/          .gitignore            NAMESPACE             README.md             qPCR_N_NP_Master.xls
+.Rhistory             .git/                 DESCRIPTION           R/                    man/                  tidyQ.Rproj
+> git status
+git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/67AB29B0/pcs/source-pane.pper[m
+	[31mmodified:   R/ampliQ.R[m
+	[31mmodified:   man/ampliQ.Rd[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/2018_sides/tidyQ[m$ git add -A
