@@ -4,18 +4,14 @@
 \alias{ampliQ}
 \title{A function to graph (ggplot) amplification values (deltaRN vs CT)}
 \usage{
-ampliQ(df, x, y, color, facets)
+ampliQ(df, color, facets)
 }
 \arguments{
 \item{df}{A data frame.}
 
-\item{x}{Variable for x-axis of the graph}
-
-\item{y}{Variable for y-axis of the graph}
-
 \item{color}{Variable to dictate color of the graph}
 
-\item{facets}{Include variables for facetwrap; tie two variables with ~}
+\item{facets}{Include variables for facetwrap; tie two variables with ~ in quotations}
 }
 \value{
 ggplot of Amplification plot

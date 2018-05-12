@@ -12,10 +12,12 @@
 #' @export
 
 
-ampliQ <- function(df,color, facets) {
+ampliQ <- function(df, color, facets) {
 
     p <- df %>%
-      ggplot(aes(x = Cycle, y = deltaRN, color = color)) # ... define the variable for color
+      ggplot(aes_string(x = "Cycle",
+                 y = "deltaRN",
+                 color = color)) # ... define the variable for color
 
     p + geom_smooth(method = "loess") +
     facet_wrap(reformulate(facets))+
