@@ -14,12 +14,14 @@
 #' @export
 
 
+ampliQ <- function(df, x , y ,color) {
 
-ampliQ <- function(df, x, y, color) {
+    p <- df %>%
+      ggplot(aes_string(x = x, y = y, color = color)) # ... define the variable for color
 
-  df %>%
-    ggplot(aes(x = x, y = y, color = color)) + # ... define the variable for color
-    geom_smooth() +
-    facet_wrap(Gene~State)
+    p + geom_smooth(method = "loess") +
+    facet_wrap(Mouse~State)+
+    theme_soo()
 
 }
+
