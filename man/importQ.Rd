@@ -2,20 +2,20 @@
 % Please edit documentation in R/importQ.R
 \name{importQ}
 \alias{importQ}
-\title{A function to import .xls files into R}
+\title{A function to import the 'Results' sheet from .xls/x files into R.}
 \usage{
-importQ(file, ranges)
+importQ(file = here(list.files(pattern = "*.xls|*.xlsx")), num_samples)
 }
 \arguments{
-\item{file}{The `.xls` sheet that you want to import (it should be in your working directory).}
+\item{file}{The `.xls/x` present in working directory or specific `.xls/x`.}
 
-\item{ranges}{The specific range of cells within each sheet in your `.xls` file.}
+\item{num_samples}{The specific range of cells within each sheet in your `.xls/x` file.}
 }
 \value{
-Combined dataframe containing data from all of the ranges from sheets.
+Combined dataframe containing data from all of the ranges from 'Results' sheets.
 }
 \description{
-A function to import .xls files into R
+A function to import the 'Results' sheet from .xls/x files into R.
 }
 \keyword{file,}
 \keyword{import}

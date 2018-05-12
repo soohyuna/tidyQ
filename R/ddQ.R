@@ -6,8 +6,7 @@
 #' @param control String value for control group of interest.
 #' @param na.rm Remove NAs from data, defaults to TRUE.
 #' @return Data frame of average CT values by groups and number of values averaged.
-#' @example
-#'   df %>% avgQ(sheet, Mouse, State, Gene,
+#' @example df %>% avgQ(sheet, Mouse, State, Gene,
 #'               name = "Tech_rep",
 #"               param_var = CT)
 #'

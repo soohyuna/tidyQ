@@ -1,54 +1,36 @@
-#' A function to import .xls files into R
+#' A function to import the 'Results' sheet from .xls/x files into R.
 #'
-#' @param file The `.xls` sheet that you want to import (it should be in your working directory).
-#' @param  ranges The specific range of cells within each sheet in your `.xls` file.
-#' @return Combined dataframe containing data from all of the ranges from sheets.
-#' @example
-#' importQ(file = "myfile.xls", ranges = c("A4:G89", "A4:J100"))
-#'
+#' @param file The `.xls/x` present in working directory or specific `.xls/x`.
+#' @param  num_samples The specific range of cells within each sheet in your `.xls/x` file.
+#' @return Combined dataframe containing data from all of the ranges from 'Results' sheets.
+#' @example importQ(path = "myfile.xls", num_samples = list(72))
 #' @keywords import raw qPCR file, import
-#' @import tidyverse, readxl, purrr
+#' @import tidyverse, readxl, purrr, here
 #'
 #' @export
 
+importQ <- function(file = here(list.files(pattern = "*.xls|*.xlsx")),
+                       num_samples){
 
-importQ <- function(file, ranges) {
+  file %>%
+    map2_df(num_samples, ~ read_excel(path = .x, sheet = "Results", skip = 7, n_max = .y)) %>%
+    bind_rows()
 
-  sheets <- file %>%
-    excel_sheets() #locate the sheets on xls file
-
-  rawdata <- map2_df(sheets,
-                     ranges,
-                     ~read_excel(file,
-                                 sheet = .x,
-                                 range = .y),
-                     .id = "sheet")
-  rawdata
 }
-
-
-
-
-
-
-
-
 
 # Old  --------------------------------
 
-# importQ <- function(file, cells) {
+
+# importQ <- function(file, ranges) {
 #
-#   file <- "qPCR_N_NP_Master.xls"
+#   sheets <- file %>%
+#     excel_sheets() #locate the sheets on xls file
 #
-#   raw <- here(file)
-#
-#   sheets <- raw %>% excel_sheets() #locate the sheets on xls file
-#
-#   ranges <- list(cells)
-#
-#   rawdata <- map2_df(sheets, ranges,
-#                     ~read_excel(file, sheet = .x, range = .y),
-#                     .id = "sheet")
+#   rawdata <- map2_df(sheets,
+#                      ranges,
+#                      ~read_excel(file,
+#                                  sheet = .x,
+#                                  range = .y),
+#                      .id = "sheet")
 #   rawdata
-#
 # }
