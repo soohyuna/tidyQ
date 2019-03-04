@@ -3,18 +3,13 @@
 #' @param df A data frame.
 #' @param  ... Variables to group by.
 #' @param name Text to append to N and mean arguments
+#' @param param_var Parameter or gene to be summarize
+#' @param ignoreNAs Remove NAs, defaults to TRUE
 #' @return Data frame of average CT values by groups and number of values averaged.
-#' @example
-#'   df %>% avgQ(sheet, Mouse, State, Gene,
-#'               name = "Tech_rep",
-#"               param_var = CT)
-#'
 #' @keywords summarize, mean, average
-#' @import tidyverse
-#'
 #' @export
 
-avgQ <- function(df, ..., name = "CT", param_var, na.rm = TRUE) {
+avgQ <- function(df, ..., name = "CT", param_var, ignoreNAs = TRUE) {
 
   group_var <- quos(...)
   param_var <- enquo(param_var)
@@ -25,11 +20,11 @@ avgQ <- function(df, ..., name = "CT", param_var, na.rm = TRUE) {
 
 
   df %>%
-    group_by(!!! group_var) %>%
-    summarise(   !! N := length(CT),
+    dplyr::group_by(!!! group_var) %>%
+    dplyr::summarise(!! N := length(CT),
                  !! mean := mean(!! param_var, na.rm = na.rm),
-                 !! sd := sd(!! param_var, na.rm = na.rm),
-                 !! se := sd(!! param_var, na.rm = na.rm) /
+                 !! sd := sd(!! param_var, na.rm = ignoreNAs),
+                 !! se := sd(!! param_var, na.rm = ignoreNAs) /
                    sqrt(length(na.omit(!!param_var)))
 
     )

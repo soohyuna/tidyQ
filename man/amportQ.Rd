@@ -4,13 +4,10 @@
 \alias{amportQ}
 \title{A function to import amplification data from .xls files.}
 \usage{
-amportQ(file = here(list.files(pattern = "*.xls|*.xlsx")), num_samples,
-  sep_var)
+amportQ(file, sep_var)
 }
 \arguments{
-\item{file}{The `.xls/x` present in working directory or specific `.xls/x`.}
-
-\item{num_samples}{The specific range of cells within each sheet in your `.xls/x` file.}
+\item{file}{The ".xls/x" present in working directory or specific ".xls/x".}
 
 \item{sep_var}{Variables to separate the 'Sample' column into.}
 }

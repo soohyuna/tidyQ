@@ -4,7 +4,7 @@
 \alias{avgQ}
 \title{A function to average CT values by groups}
 \usage{
-avgQ(df, ..., name = "CT", param_var, na.rm = TRUE)
+avgQ(df, ..., name = "CT", param_var, ignoreNAs = TRUE)
 }
 \arguments{
 \item{df}{A data frame.}
@@ -12,6 +12,10 @@ avgQ(df, ..., name = "CT", param_var, na.rm = TRUE)
 \item{...}{Variables to group by.}
 
 \item{name}{Text to append to N and mean arguments}
+
+\item{param_var}{Parameter or gene to be summarize}
+
+\item{ignoreNAs}{Remove NAs, defaults to TRUE}
 }
 \value{
 Data frame of average CT values by groups and number of values averaged.
