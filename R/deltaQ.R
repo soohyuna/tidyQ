@@ -4,12 +4,7 @@
 #' @param  ... Variables to group by.
 #' @param ref_gene Reference or housekeeping gene for comparison.
 #' @return Data frame of delta CT values by groups.
-#' @example
-#'   df %>%   deltaQ(Mouse, State,
-#'                   ref_gene = "GAPDH")
-#'
 #' @keywords delta, deltaCT
-#' @import tidyverse
 #'
 #' @export
 
@@ -19,19 +14,19 @@ deltaQ <- function(df, ..., ref_gene) {
   ref_gene2 <- as.name(ref_gene)
 
   ref_gene_df <- df %>%
-    group_by(!!! group_var) %>%
-    spread(Gene, meanCT) %>%
-    select(!!! group_var, ref_gene) %>%
-    drop_na() %>%
-    ungroup()
+    dplyr::group_by(!!! group_var) %>%
+    tidyr::spread(Gene, meanCT) %>%
+    dplyr::select(!!! group_var, ref_gene) %>%
+    dplyr::drop_na() %>%
+    dplyr::ungroup()
 
   print(ref_gene_df)
 
   df %>%
-    filter(!Gene == "GAPDH")  %>%
-    inner_join(ref_gene_df) %>%
-    select(-starts_with("sd"), -starts_with("se")) %>%
-    mutate(deltaCT = meanCT - UQ(ref_gene2))
+    dplyr::filter(!Gene == "GAPDH")  %>%
+    dplyr::inner_join(ref_gene_df) %>%
+    dplyr::select(-dplyr::starts_with("sd"),
+                  -dplyr::starts_with("se")) %>%
+    dplyr::mutate(deltaCT = meanCT - UQ(ref_gene2))
 
 }
-

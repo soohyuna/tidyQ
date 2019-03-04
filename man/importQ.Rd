@@ -4,12 +4,10 @@
 \alias{importQ}
 \title{A function to import the 'Results' sheet from .xls/x files into R.}
 \usage{
-importQ(file = here(list.files(pattern = "*.xls|*.xlsx")), num_samples)
+importQ(dir = "")
 }
 \arguments{
-\item{file}{The `.xls/x` present in working directory or specific `.xls/x`.}
-
-\item{num_samples}{The specific range of cells within each sheet in your `.xls/x` file.}
+\item{dir}{The specific folder path containing all .xls files, defaults to working directory.}
 }
 \value{
 Combined dataframe containing data from all of the ranges from 'Results' sheets.
