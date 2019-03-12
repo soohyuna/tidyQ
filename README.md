@@ -1,4 +1,4 @@
-# tidyQ
+# tidyQ - analyze RT-qPCR data with tidyverse and ggplot.
 
 Package developed to streamline the analysis of real-time quantitative polymerase chain reaction (RT-qPCR) data. 
 
