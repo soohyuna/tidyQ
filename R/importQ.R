@@ -1,36 +1,51 @@
 #' A function to import the 'Results' sheet from .xls/x files into R.
 #'
-#' @param file The `.xls/x` present in working directory or specific `.xls/x`.
-#' @param  num_samples The specific range of cells within each sheet in your `.xls/x` file.
+#' @param dir The specific folder path containing all .xls files, defaults to working directory.
 #' @return Combined dataframe containing data from all of the ranges from 'Results' sheets.
-#' @example importQ(path = "myfile.xls", num_samples = list(72))
 #' @keywords import raw qPCR file, import
-#' @import tidyverse, readxl, purrr, here
-#'
 #' @export
 
-importQ <- function(file = here(list.files(pattern = "*.xls|*.xlsx")),
-                       num_samples){
+importQ <- function(dir = ""){
 
-  file %>%
-    map2_df(num_samples, ~ read_excel(path = .x, sheet = "Results", skip = 7, n_max = .y)) %>%
-    bind_rows()
+  # Get filenames
+  if(dir == ""){
+
+    files <- here::here(list.files(path = here::here(),
+                                   pattern = "*.xls|*.xlsx"))
+  } else {
+
+    files <- here::here(dir,list.files(path = here::here(dir),
+                                       pattern = "*.xls|*.xlsx"))
+  }
+
+  # Determine number of samples
+  get_samples <- function(path){
+
+    rows <- path %>%
+      readxl::read_excel(sheet = "Results",
+                         skip = 7) %>%
+      dplyr::select(Well) %>%
+      base::nrow()
+
+    rows - 5
+  }
+
+  # Create list of sample numbers
+  num_samples <- files %>%
+    purrr::map(~get_samples(path = .x)) %>%
+    base::as.list()
+
+  message(paste("\nDetected",num_samples, "samples in", files))
+  message(paste("\ntidyQ will now combine", base::Reduce(`+`, num_samples),
+                "samples from ",base::length(num_samples),
+                "plates into a single data frame."))
+
+
+  # Read in files
+  purrr::map2_df(files, num_samples,
+                 ~ readxl::read_excel(path = .x,
+                                      sheet = "Results",
+                                      skip = 7,
+                                      n_max = .y))
 
 }
-
-# Old  --------------------------------
-
-
-# importQ <- function(file, ranges) {
-#
-#   sheets <- file %>%
-#     excel_sheets() #locate the sheets on xls file
-#
-#   rawdata <- map2_df(sheets,
-#                      ranges,
-#                      ~read_excel(file,
-#                                  sheet = .x,
-#                                  range = .y),
-#                      .id = "sheet")
-#   rawdata
-# }

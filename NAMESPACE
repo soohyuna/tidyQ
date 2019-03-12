@@ -7,9 +7,12 @@ export(cleanQ)
 export(ddQ)
 export(deltaQ)
 export(importQ)
+<<<<<<< HEAD
 import("purrr,")
 import("readxl,")
 import("tidyverse,")
 import(here)
 import(themesoo)
 import(tidyverse)
+=======
+>>>>>>> f665650501b71c341eb7542508d9d72183ecedcf

@@ -2,11 +2,30 @@ Package: tidyQ
 Type: Package
 Title: What the Package Does (Title Case)
 Version: 0.1.0
-Author: Who wrote it
-Maintainer: The package maintainer <yourself@somewhere.net>
-Description: More about what it does (maybe more than one line)
+Authors@R: c(
+    person("Soo Hyun", "Ahn",email = "soohyahn@gmail.com", role = c("aut","cre")),
+    person("Sean", "Nguyen",email = "nguyens7@msu.edu", role = c("aut")))
+Maintainer: The package maintainer <soohyahn@gmail.com>
+Description: Use this package when need to analyze RT-qPCR data in CT format. 
     Use four spaces when indenting paragraphs within the Description.
-License: What license is it under?
+License: MIT
 Encoding: UTF-8
 LazyData: true
+<<<<<<< HEAD
+=======
+Imports: 
+    dplyr, 
+    tidyr, 
+    here, 
+    purrr,
+    broom, 
+    rlang,
+    stats,
+    utils,
+    purrr, 
+    themesoo,
+    readr,
+    ggplot2,
+    readxl
+>>>>>>> f665650501b71c341eb7542508d9d72183ecedcf
 RoxygenNote: 6.1.1
