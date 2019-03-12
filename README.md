@@ -7,3 +7,4 @@ Package developed to streamline the analysis of real-time quantitative polymeras
 3. Clean up data file into tidy format using cleanQ()
 4. calculate delta CT using deltaQ()
 5. calculate fold change using ddQ(). 
+6. Plot your data using ggplot!
