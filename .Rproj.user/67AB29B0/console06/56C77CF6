@@ -699,3 +699,115 @@ Total 14 (delta 8), reused 0 (delta 0)
 remote: Resolving deltas:   0% (0/8)   [Kremote: Resolving deltas:  12% (1/8)   [Kremote: Resolving deltas:  25% (2/8)   [Kremote: Resolving deltas:  37% (3/8)   [Kremote: Resolving deltas:  50% (4/8)   [Kremote: Resolving deltas:  62% (5/8)   [Kremote: Resolving deltas:  75% (6/8)   [Kremote: Resolving deltas:  87% (7/8)   [Kremote: Resolving deltas: 100% (8/8)   [Kremote: Resolving deltas: 100% (8/8), completed with 8 local objects.[K
 To https://github.com/soohyuna/tidyQ.git
    a86c524..8a96675  master -> master
+[K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/2018_sides/tidyQ[m$ git pull
+Already up-to-date.
+[K[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rhistory[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+	[31mmodified:   .Rproj.user/67AB29B0/pcs/files-pane.pper[m
+	[31mmodified:   .Rproj.user/67AB29B0/pcs/source-pane.pper[m
+	[31mmodified:   .Rproj.user/67AB29B0/pcs/windowlayoutstate.pper[m
+	[31mmodified:   .Rproj.user/67AB29B0/sources/prop/INDEX[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git add -A
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git commmi[K[Kit 0m [K[K[K
+.DS_Store             .Rproj.user/          DESCRIPTION           README.md             tidyQ.Rproj
+.Rbuildignore         .git/                 NAMESPACE             man/                  
+.Rhistory             .gitignore            R/                    qPCR_N_NP_Master.xls  
+[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git commit it[K[K[K[K[K[K[K[K[K[K[K[K[Kgit pull
+remote: Enumerating objects: 10, done.[K
+remote: Counting objects:  10% (1/10)   [Kremote: Counting objects:  20% (2/10)   [Kremote: Counting objects:  30% (3/10)   [Kremote: Counting objects:  40% (4/10)   [Kremote: Counting objects:  50% (5/10)   [Kremote: Counting objects:  60% (6/10)   [Kremote: Counting objects:  70% (7/10)   [Kremote: Counting objects:  80% (8/10)   [Kremote: Counting objects:  90% (9/10)   [Kremote: Counting objects: 100% (10/10)   [Kremote: Counting objects: 100% (10/10), done.[K
+remote: Total 17 (delta 10), reused 10 (delta 10), pack-reused 7[K
+Unpacking objects:   5% (1/17)   Unpacking objects:  11% (2/17)   Unpacking objects:  17% (3/17)   Unpacking objects:  23% (4/17)   Unpacking objects:  29% (5/17)   Unpacking objects:  35% (6/17)   Unpacking objects:  41% (7/17)   Unpacking objects:  47% (8/17)   Unpacking objects:  52% (9/17)   Unpacking objects:  58% (10/17)   Unpacking objects:  64% (11/17)   Unpacking objects:  70% (12/17)   Unpacking objects:  76% (13/17)   Unpacking objects:  82% (14/17)   Unpacking objects:  88% (15/17)   Unpacking objects:  94% (16/17)   Unpacking objects: 100% (17/17)   Unpacking objects: 100% (17/17), done.
+From https://github.com/soohyuna/tidyQ
+   5a93d1b..f665650  master     -> origin/master
+Updating 5a93d1b..f665650
+error: Your local changes to the following files would be overwritten by merge:
+	DESCRIPTION
+	NAMESPACE
+Please commit your changes or stash them before you merge.
+Aborting
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git commit -m
+error: switch `m' requires a value
+usage: git commit [<options>] [--] <pathspec>...
+
+    -q, --quiet           suppress summary after successful commit
+    -v, --verbose         show diff in commit message template
+
+Commit message options
+    -F, --file <file>     read message from file
+    --author <author>     override author for commit
+    --date <date>         override date for commit
+    -m, --message <message>
+                          commit message
+    -c, --reedit-message <commit>
+                          reuse and edit message from specified commit
+    -C, --reuse-message <commit>
+                          reuse message from specified commit
+    --fixup <commit>      use autosquash formatted message to fixup specified commit
+    --squash <commit>     use autosquash formatted message to squash specified commit
+    --reset-author        the commit is authored by me now (used with -C/-c/--amend)
+    -s, --signoff         add Signed-off-by:
+    -t, --template <file>
+                          use specified template file
+    -e, --edit            force edit of commit
+    --cleanup <default>   how to strip spaces and #comments from message
+    --status              include status in commit message template
+    -S, --gpg-sign[=<key-id>]
+                          GPG sign commit
+
+Commit contents options
+    -a, --all             commit all changed files
+    -i, --include         add specified files to index for commit
+    --interactive         interactively add files
+    -p, --patch           interactively add changes
+    -o, --only            commit only specified files
+    -n, --no-verify       bypass pre-commit and commit-msg hooks
+    --dry-run             show what would be committed
+    --short               show status concisely
+    --branch              show branch information
+    --porcelain           machine-readable output
+    --long                show status in long format (default)
+    -z, --null            terminate entries with NUL
+    --amend               amend previous commit
+    --no-post-rewrite     bypass post-rewrite hook
+    -u, --untracked-files[=<mode>]
+                          show untracked files, optional modes: all, normal, no. (Default: all)
+
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ fi[K[Kgit [K[K[K[Kgit status
+On branch master
+Your branch is behind 'origin/master' by 2 commits, and can be fast-forwarded.
+  (use "git pull" to update your local branch)
+
+Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+	[32mmodified:   .Rhistory[m
+	[32mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[32mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[32mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+	[32mmodified:   .Rproj.user/67AB29B0/pcs/files-pane.pper[m
+	[32mmodified:   .Rproj.user/67AB29B0/pcs/source-pane.pper[m
+	[32mmodified:   .Rproj.user/67AB29B0/pcs/windowlayoutstate.pper[m
+	[32mmodified:   .Rproj.user/67AB29B0/sources/prop/INDEX[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[31mmodified:   DESCRIPTION[m
+	[31mmodified:   NAMESPACE[m
+
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git add -A
