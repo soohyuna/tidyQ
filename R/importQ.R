@@ -11,11 +11,13 @@ importQ <- function(dir = ""){
   if(dir == ""){
 
     files <- here::here(list.files(path = here::here(),
-                                   pattern = "*.xls|*.xlsx"))
+                                   pattern = "*.xls|*.xlsx")) %>%
+      as.list()
   } else {
 
     files <- here::here(dir,list.files(path = here::here(dir),
-                                       pattern = "*.xls|*.xlsx"))
+                                       pattern = "*.xls|*.xlsx")) %>%
+      as.list()
   }
 
   # Determine number of samples
@@ -40,12 +42,28 @@ importQ <- function(dir = ""){
                 "samples from ",base::length(num_samples),
                 "plates into a single data frame."))
 
+  # Determine range for each plate
+  plate_range <- num_samples %>%
+    map(~paste0("A8:X", .x))
+
+
 
   # Read in files
-  purrr::map2_df(files, num_samples,
+  purrr::map2_df(files, plate_range,
                  ~ readxl::read_excel(path = .x,
                                       sheet = "Results",
-                                      skip = 7,
-                                      n_max = .y))
+                                      range = .y,
+                                      col_types = "text"))
+
 
 }
+
+
+# nms <- files %>%
+#   map(~read_excel(.x, sheet = "Results", skip = 7) %>%
+#         select(1:24) %>%
+#         colnames())
+#
+# coltypes <- nms %>%
+#   map(~ifelse(grepl("^Cт", .x),"text","guess"))
+
