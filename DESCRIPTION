@@ -11,8 +11,6 @@ Description: Use this package when need to analyze RT-qPCR data in CT format.
 License: MIT
 Encoding: UTF-8
 LazyData: true
-<<<<<<< HEAD
-=======
 Imports: 
     dplyr, 
     tidyr, 
@@ -27,5 +25,4 @@ Imports:
     readr,
     ggplot2,
     readxl
->>>>>>> f665650501b71c341eb7542508d9d72183ecedcf
 RoxygenNote: 6.1.1
