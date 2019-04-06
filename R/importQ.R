@@ -44,7 +44,7 @@ importQ <- function(dir = ""){
 
   # Determine range for each plate
   plate_range <- num_samples %>%
-    map(~paste0("A8:X", .x))
+    map(~paste0("A8:X", (.x +8 )))
 
 
 
