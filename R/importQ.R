@@ -47,9 +47,6 @@ importQ <- function(dir = ""){
 
     map(~paste0("A8:X", (.x +8 )))
 
-    map(~paste0("A8:X", (.x + 8)))
-
-
 
   # Read in files
   purrr::map2_df(files, plate_range,
