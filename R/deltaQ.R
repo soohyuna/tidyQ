@@ -17,7 +17,7 @@ deltaQ <- function(df, ..., ref_gene) {
     dplyr::group_by(!!! group_var) %>%
     tidyr::spread(Gene, meanCT) %>%
     dplyr::select(!!! group_var, ref_gene) %>%
-    dplyr::drop_na() %>%
+    tidyr::drop_na() %>%
     dplyr::ungroup()
 
   print(ref_gene_df)
