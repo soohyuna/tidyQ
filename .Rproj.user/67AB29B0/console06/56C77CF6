@@ -1086,3 +1086,76 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git[K[K[Kg[Kgit add -A
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git commit- [K[K -m "hello"
+[master 2081ab4] hello
+ 8 files changed, 110 insertions(+), 40 deletions(-)
+ rewrite .Rproj.user/67AB29B0/console06/INDEX001 (75%)
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git push
+To https://github.com/soohyuna/tidyQ.git
+ ! [rejected]        master -> master (non-fast-forward)
+error: failed to push some refs to 'https://github.com/soohyuna/tidyQ.git'
+hint: Updates were rejected because the tip of your current branch is behind
+hint: its remote counterpart. Integrate the remote changes (e.g.
+hint: 'git pull ...') before pushing again.
+hint: See the 'Note about fast-forwards' in 'git push --help' for details.
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git rest
+git: 'rest' is not a git command. See 'git --help'.
+
+The most similar command is
+	reset
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git reset
+Unstaged changes after reset:
+M	.Rproj.user/67AB29B0/console06/56C77CF6
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git fetch - [K-all
+Fetching origin
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git reset -- hard origin/master
+Unstaged changes after reset:
+M	.Rproj.user/67AB29B0/console06/56C77CF6
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git reset[K[K[K[K[K[K[K[K[Kgit status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git pull
+Removing qPCR_N_NP_Master.xls
+Auto-merging R/importQ.R
+CONFLICT (content): Merge conflict in R/importQ.R
+Auto-merging R/deltaQ.R
+CONFLICT (content): Merge conflict in R/deltaQ.R
+Automatic merge failed; fix conflicts and then commit the result.
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch and 'origin/master' have diverged,
+and have 1 and 4 different commits each, respectively.
+  (use "git pull" to merge the remote branch into yours)
+
+You have unmerged paths.
+  (fix conflicts and run "git commit")
+  (use "git merge --abort" to abort the merge)
+
+Changes to be committed:
+
+	[32mmodified:   .DS_Store[m
+	[32mdeleted:    qPCR_N_NP_Master.xls[m
+
+Unmerged paths:
+  (use "git add <file>..." to mark resolution)
+
+	[31mboth modified:   R/deltaQ.R[m
+	[31mboth modified:   R/importQ.R[m
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git add -A
