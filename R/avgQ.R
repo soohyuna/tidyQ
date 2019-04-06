@@ -22,7 +22,7 @@ avgQ <- function(df, ..., name = "CT", param_var, ignoreNAs = TRUE) {
   df %>%
     dplyr::group_by(!!! group_var) %>%
     dplyr::summarise(!! N := length(CT),
-                 !! mean := mean(!! param_var, na.rm = na.rm),
+                 !! mean := mean(!! param_var, na.rm = ignoreNAs),
                  !! sd := sd(!! param_var, na.rm = ignoreNAs),
                  !! se := sd(!! param_var, na.rm = ignoreNAs) /
                    sqrt(length(na.omit(!!param_var)))
