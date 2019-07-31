@@ -4,10 +4,12 @@
 \alias{cleanQ}
 \title{A function to clean a xls imported data frame}
 \usage{
-cleanQ(df, sep_var)
+cleanQ(df, sep_samp = FALSE, sep_var)
 }
 \arguments{
 \item{df}{A data frame.}
+
+\item{sep_samp}{Separate sample column into individual columns.}
 
 \item{sep_var}{Variables of variables to be separated.}
 }
