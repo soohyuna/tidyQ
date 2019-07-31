@@ -11,19 +11,20 @@ cleanQ <- function(df, sep_samp = FALSE,  sep_var) {
 
 rawCT <- paste0("C","\u0442")
 
-  clean_df <- df %>%
-    dplyr::rename("Sample" = `Sample Name`,
-           "Gene" = `Target Name`,
-           "CT" = rawCT) %>%
-    dplyr::select(-(Task:`RQ Max`)) %>%
-    dplyr::filter(!CT %in% c("NA","Undetermined")) %>%
-    dplyr::mutate_at(vars(1:Gene), as.factor) %>%
-    dplyr::mutate_at(vars(CT), as.numeric)
+clean_df <- df %>%
+  dplyr::rename("Sample" = `Sample Name`,
+                "Gene" = `Target Name`,
+                "CT" = rawCT) %>%
+  dplyr::select(-(Task:`RQ Max`)) %>%
+  dplyr::filter(!CT %in% c("NA","Undetermined")) %>%
+  dplyr::mutate_at(vars(1:Gene), as.factor) %>%
+  dplyr::mutate_at(vars(CT), as.numeric)
 
-  return(clean_df)
+  if(sep_samp == FALSE){
 
+    return(clean_df)
 
-  if(sep_samp == TRUE){
+  } else if(sep_samp == TRUE){
 
   clean_df %>%
       tidyr::separate(Sample,
