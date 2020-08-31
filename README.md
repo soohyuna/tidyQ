@@ -4,12 +4,12 @@
 
 This package streamlines importing of your RAW data .xlsx file from the machine to generating Fold change based on the reference gene (i.e. GAPDH), and endogenous control (i.e. non-treated).  
 
-__Package Pipeline:__
-1. Import .xls and/or .xlsx files using importQ()
-2. Average CT values of triplicate technical replications using avgQ()
-3. Clean up data file into tidy format using cleanQ()
-4. calculate delta CT using deltaQ()
-5. calculate fold change using ddQ(). (optional step: calculate log2FC using mutate)
+## __Package Pipeline:__
+1. Import .xls and/or .xlsx files using __importQ()__
+2. Average CT values of triplicate technical replications using __avgQ()__
+3. Clean up data file into tidy format using __cleanQ()__
+4. calculate delta CT using __deltaQ()__
+5. calculate fold change using __ddQ()__. (optional step: calculate log2FC using mutate)
 6. Plot your data using ggplot.
 
 
