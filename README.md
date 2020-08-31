@@ -10,6 +10,9 @@ This package streamlines importing of your RAW data .xlsx file from the machine 
 3. Clean up data file into tidy format using __cleanQ()__
 4. Calculate delta CT using __deltaQ()__
 5. Calculate fold change using __ddQ()__. (optional step: calculate log2FC using mutate)
-6. Plot your data using ggplot.
+6. Plot your data using ggplot.  
+
+## __Website__  
+ https://soohyuna.github.io/tidyQ/
 
 
