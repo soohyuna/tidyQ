@@ -5,65 +5,75 @@
 #' @keywords import raw qPCR file, import
 #' @export
 
-importQ <- function(dir = ""){
 
-  # Get filenames
-  if(dir == ""){
+# Get filenames
 
-    files <- here::here(list.files(path = here::here(),
-                                   pattern = "*.xls|*.xlsx")) %>%
-      as.list()
-  } else {
+importQ <- function(dir = "") {
+if(dir == "") {
 
-    files <- here::here(dir,list.files(path = here::here(dir),
-                                       pattern = "*.xls|*.xlsx")) %>%
-      as.list()
-  }
-
-  # Determine number of samples
-  get_samples <- function(path){
-
-    rows <- path %>%
-      readxl::read_excel(sheet = "Results",
-                         skip = 7) %>%
-      dplyr::select(Well) %>%
-      base::nrow()
-
-    rows - 5
-  }
-
-  # Create list of sample numbers
-  num_samples <- files %>%
-    purrr::map(~get_samples(path = .x)) %>%
+  files <- here::here(list.files(path = here::here(),
+                                 pattern = "*.xls|*.xlsx")) %>%
     base::as.list()
+} else {
 
-  message(paste("\nDetected",num_samples, "samples in", files))
-  message(paste("\ntidyQ will now combine", base::Reduce(`+`, num_samples),
-                "samples from ",base::length(num_samples),
-                "plates into a single data frame."))
+  files <- here::here(dir,list.files(path = here::here(dir),
+                                     pattern = "*.xls|*.xlsx")) %>%
+    base::as.list()
+}
 
-  # Determine range for each plate
-  plate_range <- num_samples %>%
+# Determine number of samples
+get_sample_range <- function(path){
 
-    map(~paste0("A8:X", (.x +8 )))
+  stepone <- path %>%
+    readxl::read_excel(sheet = "Results", range = "B1:B40") %>%
+    tibble::as_tibble() %>%
+    stringr::str_detect("steponeplus")
 
+  quantstudio <- path  %>%
+    readxl::read_excel(sheet = "Results", range = "B1:B40") %>%
+    tibble::as_tibble() %>%
+    stringr::str_detect("QuantStudio")
 
-  # Read in files
-  purrr::map2_df(files, plate_range,
-                 ~ readxl::read_excel(path = .x,
-                                      sheet = "Results",
-                                      range = .y,
-                                      col_types = "text"))
+  if (stepone == TRUE) {
+
+    rows_to_skip <- 7
+    bottom_row <- 5
+    print("Detected: steponeplus")
+
+  } else if(quantstudio == TRUE) {
+
+    rows_to_skip <- 47
+    bottom_row <- 5
+    print("Detected: QuantStudio")
+
+  } else {
+    print("Error: file type not supported")
+  }
+
+  total_rows <- path %>%
+    readxl::read_excel(sheet = "Results",
+                       skip = rows_to_skip) %>%
+    dplyr::select(Well) %>%
+    base::nrow()
+
+  no_samples <- total_rows - bottom_row
+
+  paste0("A",rows_to_skip + 1,":X", (no_samples + rows_to_skip  + 1))
+}
+
+# Create a list of ranges
+plate_ranges <- files %>%
+  purrr::map(~get_sample_range(path = .x)) %>%
+  base::as.list()
+
+plate_ranges
+
+# Read in files
+purrr::map2_df(files, plate_ranges,
+               ~ readxl::read_excel(path = .x,
+                                    sheet = "Results",
+                                    range = .y,
+                                    col_types = "text"))
 
 
 }
-
-
-# nms <- files %>%
-#   map(~read_excel(.x, sheet = "Results", skip = 7) %>%
-#         select(1:24) %>%
-#         colnames())
-#
-# coltypes <- nms %>%
-#   map(~ifelse(grepl("^Cт", .x),"text","guess"))
-

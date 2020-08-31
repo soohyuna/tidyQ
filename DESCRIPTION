@@ -1,6 +1,6 @@
 Package: tidyQ
 Type: Package
-Title: What the Package Does (Title Case)
+Title: This package identifies fold change of gene expression compare to control from ThermoFisher StepOne or QuantStudio qPCR machines
 Version: 0.1.0
 Authors@R: c(
     person("Soo Hyun", "Ahn",email = "soohyahn@gmail.com", role = c("aut","cre")),
@@ -24,5 +24,7 @@ Imports:
     themesoo,
     readr,
     ggplot2,
-    readxl
-RoxygenNote: 6.1.1
+    readxl,
+    tibble,
+    stringr
+RoxygenNote: 7.1.1

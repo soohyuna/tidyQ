@@ -1244,3 +1244,39 @@ Changes not staged for commit:
 
 no changes added to commit (use "git add" and/or "git commit -a")
 ]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MBP:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git add -A
+HEAD is now at dcbbceb Merge pull request #4 from nguyens7/master
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git stt[Katus
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git status
+On branch master
+Your branch is up-to-date with 'origin/master'.
+
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/56C77CF6.env[m
+	[31mmodified:   .Rproj.user/67AB29B0/console06/INDEX001[m
+
+no changes added to commit (use "git add" and/or "git commit -a")
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ git feth --[K[K[K[K[Ktch --[K[K[K[K[K[K[K[Kpull
+remote: Enumerating objects: 1, done.[K
+remote: Counting objects: 100% (1/1)   [Kremote: Counting objects: 100% (1/1), done.[K
+remote: Total 1 (delta 0), reused 0 (delta 0), pack-reused 0[K
+Unpacking objects: 100% (1/1)   Unpacking objects: 100% (1/1), done.
+From https://github.com/soohyuna/tidyQ
+   4e22959..8b42dd7  nguyens7/tidyQ -> origin/nguyens7/tidyQ
+Already up-to-date.
+]0;~/Desktop/STUFF/2018_sides/tidyQ[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ [K[36msooopy[m@[32mSoos-MacBook-Pro:[33;1m~/Desktop/STUFF/2018_sides/tidyQ[m$ 
