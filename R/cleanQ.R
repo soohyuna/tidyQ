@@ -9,12 +9,11 @@
 
 cleanQ <- function(df, sep_samp = FALSE,  sep_var) {
 
-rawCT <- paste0("C","\u0442")
+#rawCT <- paste0("C","\u0442")
 
 clean_df <- df %>%
   dplyr::rename("Sample" = `Sample Name`,
-                "Gene" = `Target Name`,
-                "CT" = rawCT) %>%
+                "Gene" = `Target Name`) %>%
   dplyr::select(-(Task:`RQ Max`)) %>%
   dplyr::filter(!CT %in% c("NA","Undetermined")) %>%
   dplyr::mutate_at(vars(1:Gene), as.factor) %>%
