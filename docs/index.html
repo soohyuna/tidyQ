@@ -63,15 +63,25 @@
 <div id="tidyq---analyze-rt-qpcr-data-with-tidyverse-and-ggplot" class="section level1">
 <div class="page-header"><h1 class="hasAnchor">
 <a href="#tidyq---analyze-rt-qpcr-data-with-tidyverse-and-ggplot" class="anchor"></a>tidyQ - analyze RT-qPCR data with tidyverse and ggplot.</h1></div>
-<p>Package developed to streamline the analysis of real-time quantitative polymerase chain reaction (RT-qPCR) data.</p>
+<p><em>tidyQ</em> is a package developed by PhDs from Michigan State University in the Cell and Molecular Biology program to streamline the analysis of real-time quantitative polymerase chain reaction (RT-qPCR) data gathered from ThermoFisher StepOnePlus RT-PCR or QuantStudio5 RT-PCR machines using delta-delta CT method.</p>
+<p>This package streamlines importing of your RAW data .xlsx file from the machine to generating Fold change based on the reference gene (i.e. GAPDH), and endogenous control (i.e. non-treated).</p>
+<div id="package-pipeline" class="section level2">
+<h2 class="hasAnchor">
+<a href="#package-pipeline" class="anchor"></a><strong>Package Pipeline:</strong>
+</h2>
 <ol>
-<li>Import .xls files using importQ()</li>
-<li>Average CT values of triplicate technical replications using avgQ()</li>
-<li>Clean up data file into tidy format using cleanQ()</li>
-<li>calculate delta CT using deltaQ()</li>
-<li>calculate fold change using ddQ().</li>
-<li>Plot your data using ggplot!</li>
+<li>Import .xls and/or .xlsx files using <strong>importQ()</strong>
+</li>
+<li>Average CT values of triplicate technical replications using <strong>avgQ()</strong>
+</li>
+<li>Clean up data file into tidy format using <strong>cleanQ()</strong>
+</li>
+<li>Calculate delta CT using <strong>deltaQ()</strong>
+</li>
+<li>Calculate fold change using <strong>ddQ()</strong>. (optional step: calculate log2FC using mutate)</li>
+<li>Plot your data using ggplot.</li>
 </ol>
+</div>
 </div>
   </div>
 

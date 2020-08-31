@@ -1,6 +1,6 @@
 # tidyQ - analyze RT-qPCR data with tidyverse and ggplot.
 
-*tidyQ* is a package developed by PhDs Michigan State University in Cell and Molecular Biology program to streamline the analysis of real-time quantitative polymerase chain reaction (RT-qPCR) data gathered from ThermoFisher StepOnePlus RT-PCR or QuantStudio5 RT-PCR machines using delta-delta CT method.
+*tidyQ* is a package developed by PhDs from Michigan State University in the Cell and Molecular Biology program to streamline the analysis of real-time quantitative polymerase chain reaction (RT-qPCR) data gathered from ThermoFisher StepOnePlus RT-PCR or QuantStudio5 RT-PCR machines using delta-delta CT method.
 
 This package streamlines importing of your RAW data .xlsx file from the machine to generating Fold change based on the reference gene (i.e. GAPDH), and endogenous control (i.e. non-treated).  
 
