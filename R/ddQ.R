@@ -22,11 +22,12 @@ ddQ <- function(df, ..., col, control, na.rm = TRUE) {
   cont_deltaCT_df <- df %>%
     dplyr::filter(!! col == control ) %>%
     dplyr::group_by(!!! group_var) %>%
-    dplyr::summarise(!! cont_deltaCT := mean(deltaCT, na.rm = na.rm))
+    dplyr::summarise(!! cont_deltaCT := mean(log(deltaCT, na.rm = na.rm)))
 
   df %>%
     dplyr::inner_join(cont_deltaCT_df) %>%
     dplyr::mutate(ddCT = deltaCT - UQ(cont_deltaCT2),
-           FC = 2^-(ddCT))
+           FC = 2^-(ddCT),
+           log2FC = log2(FC))
 
 }
